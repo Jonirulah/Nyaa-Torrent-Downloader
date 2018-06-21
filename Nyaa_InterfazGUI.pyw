@@ -17,11 +17,8 @@
 
 from tkinter import ttk
 from tkinter import *
-import sys
 import os
-import re
 import requests
-import time
 import shutil
 from NyaaPy.nyaa import Nyaa
 from pathlib import Path
@@ -240,7 +237,7 @@ def Descarga():
 			f.write(Descargar.content)
 			os.startfile(home + '\Downloads' + '\\' + Barras[4], 'open')
 		textoacambiar.set(Lan5 + str(Valordescarga) + "/" + str(len(Result)))	
-# Reabre la App
+# Reabre la App 
 def Reiniciar():
     python = sys.executable
     os.execl(python, python, * sys.argv)
